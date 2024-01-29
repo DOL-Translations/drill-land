@@ -10,7 +10,45 @@ macro Text(OFFSET, TEXT) {
   map '\n', 0x0A // New line
 
   origin {OFFSET}
+  variable lengthh = 0;
+  while (read(origin() + lengthh) != 0x00) {
+    ds 1
+  }
+
+  if (read(origin()+lengthh) == 0x00) {
+    fill 1
+  }
+  if (read(origin()+lengthh) == 0x00) {
+    fill 1
+  }
+  if (read(origin()+lengthh) == 0x00) {
+    fill 1
+  }
+  if (read(origin()+lengthh) == 0x00) {
+    fill 1
+  }
+
+  lengthh = origin() - {OFFSET}
+  
+  origin {OFFSET}
   db {TEXT} // ASCII Text To Print
+
+  variable diff = origin() - {OFFSET}
+  if (diff < lengthh) {
+    print {TEXT}
+    print " is too big by "
+    print (lengthh - diff)
+  }
+
+  while (read(origin()) != 0x00) {
+    fill 1
+  }
+}
+
+// Warning: use address first!!
+macro Text(TEXT) {
+  variable ori = origin()
+  Text(ori, {TEXT})
 }
 
 macro TextShiftJIS(OFFSET, TEXT) {
@@ -54,8 +92,8 @@ macro ReplaceAsset(ORIGIN, FILE, SIZE) {
 }
 
 //Region
-Text($3, "E")
-origin $45B; db $01
+//Text($3, "E")
+//origin $45B; db $01
 
 include "Banner.asm"
 include "System.asm"

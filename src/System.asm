@@ -1,0 +1,48 @@
+// General Errors - 5 Strings
+Text($00186B14, "The Disc Cover is open.\nIf you want to continue,\nplease close the Disc Cover.")
+Text("Reading disc..")
+Text("Please insert the\nMr. Driller Drill Land Game Disc.")
+Text("The Game Disc could not be read.\nPlease read the Nintendo GameCube\nInstruction") //Booklet for more information.")
+Text("An error has occurred.\nTurn the POWER off and refer to the Nintendo GameCube\nInstruction Booklet for") //further instructions.")
+
+// Memory Card - 34 Strings
+Text($0018B5D8, "Checking Memory Card..")
+Text("No Nintendo GameCube Memory Card\nfound in Slot A.")
+Text("The device in Slot A was not a\nMemory Card. Please insert a\nNintendo GameCube Memory Card.")
+Text("Something other than a memory card is inserted in slot A. Normal in slot A")
+Text("Memory cards in slot A are not supported.")
+Text("The Memory Card in Slot A is damaged.")
+Text("The Memory Card in Slot A is formatted a different region.")
+Text("No files, insert a mc in slot a")
+Text("Loading.. Do not touch power")
+Text("Loaded.")
+
+Text("Loading failed.")
+Text("Cancel loading?")
+Text("none inserted, cant save, insert a normal mc in slot a")
+Text("Another device is inserted in Slot A.\nPlease insert a Nintendo GameCube Memory Card.")
+Text("corrupted, format required")
+Text("wrong region, format required")
+Text("There is not enough free files on the Nintendo GameCube Memory Card in Slot A. In order to 1 file 3 blocks required, use data management")
+Text("There is not enough free space on the Nintendo GameCube Memory Card in Slot A. In order to 1 file 3 blocks required, use data management")
+Text("format will erase all, continue?")
+Text("formatting dont turn off")
+
+Text("Formatting success.")
+Text("Format failed.")
+Text("Cancel formatting?")
+Text("The Nintendo GameCube Memory Card in Slot A is damaged and cannot be used.")
+Text("Save data to the Nintendo GameCube\nMemory Card in Slot A?")
+Text("Overwrite data in Slot A?")
+Text("Saving..\nDo not touch the Memory Card or the Power.")
+Text("Saving successful.")
+Text("Saving failed.")
+Text("Cancel saving?")
+Text("The save data is corrupted, create new file?")
+Text("The save data icon is corrupted, repair?")
+
+Text($0018C090, "Start")
+Text("Format the Memory Card")
+
+// Game Name - 1 String
+//Text($, "Mr. Driller Drill Land")
