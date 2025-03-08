@@ -98,8 +98,8 @@ macro ReplaceAsset(ORIGIN, FILE, SIZE) {
 }
 
 //Region
-//Text($3, "E")
-//origin $45B; db $01
+origin $3; db $45 //E
+origin $45B; db $01
 
 include "Banner.asm"
 include "System.asm"
